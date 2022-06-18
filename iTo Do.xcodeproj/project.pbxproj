@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		915CE6C4285B7CDA007C95F9 /* iTo_DoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CE6C3285B7CDA007C95F9 /* iTo_DoApp.swift */; };
-		915CE6C6285B7CDA007C95F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CE6C5285B7CDA007C95F9 /* ContentView.swift */; };
 		915CE6C8285B7CDC007C95F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915CE6C7285B7CDC007C95F9 /* Assets.xcassets */; };
-		915CE6CB285B7CDC007C95F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915CE6CA285B7CDC007C95F9 /* Preview Assets.xcassets */; };
+		915CE6D5285B7D6D007C95F9 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CE6D4285B7D6D007C95F9 /* ItemModel.swift */; };
+		915CE6D7285B7D7F007C95F9 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CE6D6285B7D7F007C95F9 /* ListViewModel.swift */; };
+		915CE6DC285B7D8D007C95F9 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CE6D8285B7D8D007C95F9 /* AddView.swift */; };
+		915CE6DE285B7D8D007C95F9 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CE6DA285B7D8D007C95F9 /* ListRowView.swift */; };
+		915CE6DF285B7D8D007C95F9 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CE6DB285B7D8D007C95F9 /* ListView.swift */; };
+		915CE6E3285B83DA007C95F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915CE6E2285B83DA007C95F9 /* LaunchScreen.storyboard */; };
+		915CE6E5285B8650007C95F9 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 915CE6E4285B8650007C95F9 /* Preview Content */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		915CE6C0285B7CDA007C95F9 /* iTo Do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTo Do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		915CE6C3285B7CDA007C95F9 /* iTo_DoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTo_DoApp.swift; sourceTree = "<group>"; };
-		915CE6C5285B7CDA007C95F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		915CE6C7285B7CDC007C95F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		915CE6CA285B7CDC007C95F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		915CE6D4285B7D6D007C95F9 /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		915CE6D6285B7D7F007C95F9 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		915CE6D8285B7D8D007C95F9 /* AddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		915CE6DA285B7D8D007C95F9 /* ListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		915CE6DB285B7D8D007C95F9 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		915CE6E2285B83DA007C95F9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		915CE6E4285B8650007C95F9 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +61,41 @@
 		915CE6C2285B7CDA007C95F9 /* iTo Do */ = {
 			isa = PBXGroup;
 			children = (
+				915CE6D3285B7D46007C95F9 /* Model */,
+				915CE6D2285B7D3F007C95F9 /* ViewModel */,
+				915CE6D1285B7D31007C95F9 /* Views */,
 				915CE6C3285B7CDA007C95F9 /* iTo_DoApp.swift */,
-				915CE6C5285B7CDA007C95F9 /* ContentView.swift */,
+				915CE6E2285B83DA007C95F9 /* LaunchScreen.storyboard */,
 				915CE6C7285B7CDC007C95F9 /* Assets.xcassets */,
-				915CE6C9285B7CDC007C95F9 /* Preview Content */,
+				915CE6E4285B8650007C95F9 /* Preview Content */,
 			);
 			path = "iTo Do";
 			sourceTree = "<group>";
 		};
-		915CE6C9285B7CDC007C95F9 /* Preview Content */ = {
+		915CE6D1285B7D31007C95F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				915CE6CA285B7CDC007C95F9 /* Preview Assets.xcassets */,
+				915CE6D8285B7D8D007C95F9 /* AddView.swift */,
+				915CE6DA285B7D8D007C95F9 /* ListRowView.swift */,
+				915CE6DB285B7D8D007C95F9 /* ListView.swift */,
 			);
-			path = "Preview Content";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		915CE6D2285B7D3F007C95F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				915CE6D6285B7D7F007C95F9 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		915CE6D3285B7D46007C95F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				915CE6D4285B7D6D007C95F9 /* ItemModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +124,7 @@
 		915CE6B8285B7CDA007C95F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = NO;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
@@ -125,7 +156,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915CE6CB285B7CDC007C95F9 /* Preview Assets.xcassets in Resources */,
+				915CE6E5285B8650007C95F9 /* Preview Content in Resources */,
+				915CE6E3285B83DA007C95F9 /* LaunchScreen.storyboard in Resources */,
 				915CE6C8285B7CDC007C95F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915CE6C6285B7CDA007C95F9 /* ContentView.swift in Sources */,
+				915CE6D5285B7D6D007C95F9 /* ItemModel.swift in Sources */,
+				915CE6DC285B7D8D007C95F9 /* AddView.swift in Sources */,
+				915CE6DF285B7D8D007C95F9 /* ListView.swift in Sources */,
+				915CE6D7285B7D7F007C95F9 /* ListViewModel.swift in Sources */,
 				915CE6C4285B7CDA007C95F9 /* iTo_DoApp.swift in Sources */,
+				915CE6DE285B7D8D007C95F9 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -264,6 +300,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iTo Do/Preview Content\"";
@@ -273,6 +311,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -282,6 +321,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyeicus.iTo-Do";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,6 +333,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iTo Do/Preview Content\"";
@@ -302,6 +344,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +354,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyeicus.iTo-Do";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
